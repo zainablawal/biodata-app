@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#628885"
+    tools:context=".ViewEmployees">
+
+<com.google.android.material.card.MaterialCardView
+android:id="@+id/cardView"
+android:layout_width="150dp"
+android:layout_height="150dp"
+android:layout_marginStart="50dp"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="20dp"
+android:layout_marginEnd="10dp"
+android:layout_marginRight="8dp"
+android:checkable="false"
+android:padding="30dp"
+app:cardCornerRadius="90dp"
+app:layout_constraintBottom_toTopOf="@+id/captureImageBtn"
+app:layout_constraintEnd_toEndOf="@+id/captureImageBtn"
+app:layout_constraintStart_toStartOf="@+id/captureImageBtn"
+app:layout_constraintTop_toTopOf="parent">
+<!--suppress AndroidUnresolvableTag -->
+</com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        tools:layout_editor_absoluteX="-136dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="First Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/editTextFirstName"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="24dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="24dp"
+        android:layout_below="@+id/editTextPhoneNumber"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/editTextRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:textSize="24dp"
+        android:layout_below="@+id/editTextEmailAddress"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
+
+
